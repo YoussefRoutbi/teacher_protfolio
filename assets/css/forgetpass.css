@@ -1,0 +1,72 @@
+@import "/node_modules/bootstrap/dist/css/bootstrap.min.css"; 
+@import "/node_modules/bootstrap/scss/bootstrap";
+
+/* Ensure full height */
+html, body {
+  height: 100vh;
+}
+.fade-container {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+/* Hidden state */
+.fade-container.hide {
+  opacity: 0;
+  pointer-events: none; /* disable interaction when hidden */
+  position: absolute;    /* avoid layout shift */
+  width: 100%;           /* keep width to avoid jump */
+}
+/* Prevent scroll on medium (md) and up */
+@media (min-width: 768px) {
+  body {
+    overflow: hidden;
+  }
+}
+/* Optional: still allow scroll on small screens */
+
+
+body {
+  background-color: #f8f9fa;
+}
+
+/* Responsive text color */
+h2, p {
+  color: #2c3e50;
+  text-decoration: none;
+}
+
+/* Link styling */
+a {
+  color: #18bc9c;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Custom buttons */
+.btn-darkblue{
+  color: white;
+  border: 1px solid #2c3e50;
+  background-color: #2c3e50;
+  transition: all 0.3s ease;
+}
+.btn-darkblue:hover {
+  background-color: #34485c;
+  color: #ffffff;
+}
+/* Right side styling */
+.side-section {
+  background-color: #2c4391;
+  color: #ecf0f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  height: 100vh; /* Force it to stay full screen */
+  overflow: hidden;
+}
+.side-section img {
+  max-width: 90%;
+  height: auto;
+  object-fit: contain;
+}
