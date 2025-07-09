@@ -72,7 +72,7 @@ Modifier
 To run the project locally:
 
 ```bash
-git clone https://github.com/your-username/teacher_portfolio.git
+git clone https://github.com/YoussefRouatbi/teacher_portfolio.git
 Then open index.html in your browser or use a Live Server extension.
 
 🔮 Future Features
